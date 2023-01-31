@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+.nav {
+    background-color: #EEEEEE;
+    padding: 1.2%;
+}
+.nav-under {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;;
+
+}
