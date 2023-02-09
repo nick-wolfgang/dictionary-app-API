@@ -1,6 +1,9 @@
 body {
     margin: 0;
 }
+.page {
+    flex-direction: row;
+}
 .nav {
     background-color: #EEEEEE;
     padding: 1.2%;
@@ -9,5 +12,68 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;;
+}
+.site-name {
+    text-decoration: none;
+}
+.web-name {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 19px;
+    color: #2f54a6;
+}
+.links {
+    justify-content: space-between;
+    align-items: center;
+}
+.link-elem {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.material-icons{
+    color: rgb(155, 155, 155);
+}
+.material-icons:hover {
+    color: #2b4d97;
+}
 
+.input-search {
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: inline-flex;
+}
+
+input {
+    background-color: #eeeeee;
+    border: 0px solid;
+    height: 40px;
+    width: 160px;
+    color: #676767;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button {
+    margin-left: 1%;
+    padding: 6%;
+    cursor: pointer;
+    font-size: medium;
+    align-items: center;
+    border: none;
+    height: auto;
+    border-left: 1px solid black;
+    width: 5%;
+}
+button:hover {
+    color: #2b4d97;
+    background-color: rgb(226, 226, 226);
+    font-weight: bold;
+    
+}
+.search {
+    width: 35%;
+    cursor: pointer;
 }

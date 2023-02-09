@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-under">
-            <a href="#">Free Dictionary Online</a>
-            <div class="links">
-                <a href="http://paypal.com"><i class="material-icons" style="font-size:36px ; color:rgb(155, 155, 155);">paypal</i></a>
-                <a href="http://github.com"><i class="material-icons" style="font-size:36px ; color:rgb(155, 155, 155);">facebook</i></a></a>
-                <a href="http://twitter.com"><i class="material-icons" style="font-size:36px ; color:rgb(155, 155, 155);">tiktok</i></a></a>
-
+    <div class="page">
+        <nav class="nav">
+            <div class="nav-under">
+                <a href="#" class="site-name"><p class="web-name">Free Dictionary Online</p></a>
+                <div class="links">
+                    <a href="http://paypal.com" class="link-elem"><i class="material-icons" style="font-size:36px;">paypal</i></a>
+                    <a href="http://facebook.com" class="link-elem"><i class="material-icons" style="font-size:36px;">facebook</i></a></a>
+                    <a href="http://tiktok.com" class="link-elem"><i class="material-icons" style="font-size:36px;">tiktok</i></a></a> 
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="input-search">
+                <input id="search-word" type="text" placeholder="Try it here" size="40">
+                <button  onclick="searchWord()" class="search">Search</button>
             </div>
         </div>
-    </nav>
+        <div class="result">
+            <h3>Here is the result</h3>
+            <h4>Word : </h4>sd<p id="word" class="word">-------------</p>
+            <h4>Definition : </h4><p id="definition" class="definition">-------------</p>
+            <h4>Phonetic : </h4><p id="example" class="example">-------------</p>
+        </div>
+    </div>
 </body>
 </html>
