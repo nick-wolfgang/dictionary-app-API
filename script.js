@@ -1,11 +1,9 @@
-//Full URL Should be like this : https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 
+//Full URL Should be like this : https://api.dictionaryapi.dev/api/v2/entries/en/<word>
 getDictionaryData = (word) => {
     const URL = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
     const FULL_URL = URL + word
-
     let dictionaryPromise = fetch(FULL_URL)
-    console.log(dictionaryPromise)
     return dictionaryPromise.then((response) => {
         return response.json()
     })
@@ -20,10 +18,10 @@ searchWord = () => {
         console.log(response)
         showWordData(response)
     }).catch((error) => {
-        console.log('There was an error: ' + error)
-        alert('An error occured')
-        var win = window.open("", "Error", "height=200,width=400");
-        win.document.write("An error occurred: " + error);
+        if (error instanceof TypeError) {
+            alert("Sorry, we couldn't find definitions for the word you were looking for \nPlease try another word.")
+        }
+        
     })
 }
 
